@@ -8,9 +8,7 @@ function App() {
   const [amount, setAmount] = useState(0);
   const [country, setCountry] = useState('');
 
-  useEffect(() => {
-    //
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <div className='App'>

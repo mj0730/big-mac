@@ -36,3 +36,7 @@ price / RAND COUNTRY dollar price)
 Your [INPUT] is worth about [#] in [RAND COUNTRY]
 (Calculation is [INPUT] _ (local dollar price / RAND
 COUNTRY dollar price))
+
+## Description
+
+For the first requirement to find the ip address location, normally this could be obtained from the browswer request. However, a browser running on localhost wouldn't give a public IP to resolve. To solve this, the server uses the API at whatismyipaddress.com to send a query request.
