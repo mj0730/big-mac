@@ -12,7 +12,7 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "start": "nodemon server/index.js",
+    "start": "nodemon src/server/index.js",
     "dev": "react-scripts start",
     "test": "react-scripts test",
     "build": "react-scripts build"
