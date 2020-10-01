@@ -7,7 +7,7 @@ const port = 3001;
 app.use(express.static('build'));
 
 app.get('/', (req, res) => {
-  res.status(200);
+  res.sendStatus(200);
 });
 
 app.get('/country', async (req, res) => {
@@ -16,6 +16,7 @@ app.get('/country', async (req, res) => {
     res.status(200).json(country);
   } catch (error) {
     console.error('There was an error getting the user country', error);
+    res.sendStatus(404);
   }
 });
 

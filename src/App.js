@@ -6,9 +6,13 @@ import Bottom from './components/Bottom';
 
 function App() {
   const [amount, setAmount] = useState('');
-  const [country, setCountry] = useState('');
+  const [userCountry, setUserCountry] = useState('');
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    fetch('http://localhost:3001/country')
+      .then((res) => res.json())
+      .then((res) => setUserCountry(res.data['country_name']));
+  }, []);
 
   const formatCurrency = (value, country, currency) => {
     const nf = new Intl.NumberFormat('en-US', {
@@ -23,7 +27,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Top amount={amount} setAmount={setAmount} />
+      <Top amount={amount} setAmount={setAmount} userCountry={userCountry} />
       <Middle amount={amount} formatCurrency={formatCurrency} />
       <Bottom amount={amount} formatCurrency={formatCurrency} />
     </div>
