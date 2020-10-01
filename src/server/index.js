@@ -7,8 +7,16 @@ const port = 3001;
 app.use(express.static('build'));
 
 app.get('/', (req, res) => {
-  const ip = req.ip;
-  res.status(200).send(`your ip is ${ip}`);
+  res.status(200);
+});
+
+app.get('/country', async (req, res) => {
+  try {
+    const country = await getCountry();
+    res.status(200).json(country);
+  } catch (error) {
+    console.error('There was an error getting the user country', error);
+  }
 });
 
 app.listen(port, () => {

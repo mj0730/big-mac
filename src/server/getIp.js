@@ -1,36 +1,16 @@
-const https = require('https');
+const axios = require('axios');
 
-const options = {
-  host: 'bot.whatismyipaddress.com',
-  path: '/',
-  port: 443,
-  method: 'GET',
+const config = {
   headers: { 'User-Agent': 'request' },
+  responseType: 'text',
 };
 
-const getIp = () => {
-  https
-    .get(options, (res) => {
-      let text = '';
-      res.on('data', (chunk) => {
-        text += chunk;
-      });
-      res.on('end', () => {
-        if (res.statusCode === 200) {
-          try {
-            console.log(text);
-            return text;
-          } catch (e) {
-            console.log('ERROR');
-          }
-        } else {
-          console.log('Status:', res.statusCode);
-        }
-      });
-    })
-    .on('error', (err) => {
-      console.log('Error:', err);
-    });
+const getIp = async () => {
+  const userIp = await axios.get('https://bot.whatismyipaddress.com', config).catch((error) => {
+    throw new Error('There was an error getting the user IP', error);
+  });
+
+  return userIp.data;
 };
 
 module.exports = getIp;
