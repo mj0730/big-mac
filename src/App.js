@@ -5,16 +5,27 @@ import Middle from './components/Middle';
 import Bottom from './components/Bottom';
 
 function App() {
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState('');
   const [country, setCountry] = useState('');
 
   useEffect(() => {}, []);
 
+  const formatCurrency = (value, country, currency) => {
+    const nf = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    });
+
+    return nf.format(value);
+  };
+
   return (
     <div className='App'>
-      <Top />
-      <Middle />
-      <Bottom />
+      <Top amount={amount} setAmount={setAmount} />
+      <Middle amount={amount} formatCurrency={formatCurrency} />
+      <Bottom amount={amount} formatCurrency={formatCurrency} />
     </div>
   );
 }

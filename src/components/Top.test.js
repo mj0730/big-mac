@@ -7,5 +7,9 @@ describe('Component rendering', () => {
     shallow(<Top />);
   });
 
+  it('is passed the country prop', () => {
+    const wrapper = shallow(<Top country='US' />);
+    expect(wrapper.props().includedProp).toEqual('US');
+  });
   /* other tests */
 });

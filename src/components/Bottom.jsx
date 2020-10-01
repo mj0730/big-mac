@@ -1,18 +1,24 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Bottom = () => {
+const Bottom = ({ amount, formatCurrency }) => {
+  const userCountryAmount = formatCurrency(amount);
+  const otherCountryAmount = formatCurrency(amount);
+
   return (
-    <section id="bottom">
+    <section id='bottom'>
       <h3>Random Country</h3>
-      <p>You can buy # Big Macs in COUNTRY with AMOUNT.</p>
+      <p>You can buy # Big Macs in COUNTRY with {userCountryAmount}.</p>
 
-      <p>Your AMOUNT is worth about # in COUNTRY</p>
-
+      <p>
+        Your {userCountryAmount} is worth about {otherCountryAmount} in COUNTRY.
+      </p>
     </section>
-  )
-}
+  );
+};
 
-export default Bottom
+export default Bottom;
 
-Bottom.propTypes = {}
+Bottom.propTypes = {
+  amount: PropTypes.string.isRequired,
+};

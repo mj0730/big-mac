@@ -1,15 +1,17 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Middle = () => {
+const Middle = ({ amount }) => {
   return (
-    <section id="middle">
+    <section id='middle'>
       <p>You can buy ## of Big Macs in your country.</p>
       <p>Yout Dollar Purchasing Parity (PPP) is #</p>
     </section>
-  )
-}
+  );
+};
 
-export default Middle
+export default Middle;
 
-Middle.propTypes = {}
+Middle.propTypes = {
+  amount: PropTypes.string.isRequired,
+};

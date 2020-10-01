@@ -15,6 +15,7 @@
     "start": "nodemon src/server/index.js",
     "dev": "react-scripts start",
     "test": "react-scripts test",
+    "coverage": "test -- --coverage --watchAll=false",
     "build": "react-scripts build"
   },
   "eslintConfig": {
