@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const getCountry = require('./getCountry');
 
 const app = express();
@@ -10,7 +11,7 @@ app.get('/', (req, res) => {
   res.sendStatus(200);
 });
 
-app.get('/country', async (req, res) => {
+app.get('/country', cors(), async (req, res) => {
   try {
     const country = await getCountry();
     res.status(200).json(country);

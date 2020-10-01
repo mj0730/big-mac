@@ -11,7 +11,8 @@ function App() {
   useEffect(() => {
     fetch('http://localhost:3001/country')
       .then((res) => res.json())
-      .then((res) => setUserCountry(res.data['country_name']));
+      .then((res) => setUserCountry(res.data['country_name']))
+      .catch((e) => console.error('Error fetching country data', e));
   }, []);
 
   const formatCurrency = (value, country, currency) => {
