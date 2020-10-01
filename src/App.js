@@ -27,9 +27,20 @@ function App() {
 
   return (
     <div className='App'>
+      <h1>Big Mac Index</h1>
       <Top amount={amount} setAmount={setAmount} userCountry={userCountry} />
       <Middle amount={amount} formatCurrency={formatCurrency} />
       <Bottom amount={amount} formatCurrency={formatCurrency} />
+      <footer>
+        <a
+          href='https://github.com/mj0730/big-mac/'
+          target='_blank'
+          rel='noreferrer noopener'
+          title='Visit the GitHub repository for this application'
+        >
+          <img src='./GitHub-Mark-Light-64px.png' alt='GitHub logo'></img>github.com/mj0730/big-mac
+        </a>
+      </footer>
     </div>
   );
 }
