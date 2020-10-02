@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 
-const Bottom = ({ amount, formatCurrency }) => {
+const Bottom = ({ amount, formatCurrency, data }) => {
   const userCountryAmount = formatCurrency(amount);
   const otherCountryAmount = formatCurrency(amount);
 

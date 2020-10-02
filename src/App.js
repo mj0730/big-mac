@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './App.css';
 import Top from './components/Top';
 import Middle from './components/Middle';
@@ -7,11 +7,15 @@ import Bottom from './components/Bottom';
 function App() {
   const [amount, setAmount] = useState('');
   const [userCountry, setUserCountry] = useState('');
+  const [data, setData] = useState();
 
   useEffect(() => {
     fetch('http://localhost:3001/country')
       .then((res) => res.json())
-      .then((res) => setUserCountry(res.data['country_name']))
+      .then((res) => {
+        setData(res);
+        setUserCountry(res.user.Country);
+      })
       .catch((e) => console.error('Error fetching country data', e));
   }, []);
 
@@ -30,8 +34,9 @@ function App() {
     <div className='App'>
       <h1>Big Mac Index</h1>
       <Top amount={amount} setAmount={setAmount} userCountry={userCountry} />
-      <Middle amount={amount} formatCurrency={formatCurrency} />
-      <Bottom amount={amount} formatCurrency={formatCurrency} />
+      {!data ? <p>Loading...</p> : <Middle amount={amount} formatCurrency={formatCurrency} data={data} />}
+      {!data ? <p></p> : <Bottom amount={amount} formatCurrency={formatCurrency} data={data} />}
+
       <footer>
         <a
           href='https://github.com/mj0730/big-mac/'
