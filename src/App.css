@@ -5,16 +5,28 @@
   --mcd-yellow: #fff10a;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  background-color: #333;
+  padding: 1em 3em;
+}
+
 body {
   background-color: #303030;
   color: var(--text-primary);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
     'Droid Sans', 'Helvetica Neue', sans-serif;
   margin: 2em;
+  max-width: 800px;
 }
 
 h1 {
   color: var(--mcd-red);
+  margin-top: 0;
 }
 
 h2 {
@@ -66,4 +78,10 @@ footer a {
 
 .country {
   color: var(--mcd-yellow);
+}
+
+@media screen and (max-width: 400px) {
+  footer a {
+    font-size: 0.8rem;
+  }
 }
