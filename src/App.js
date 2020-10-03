@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Top from './components/Top';
 import Middle from './components/Middle';
@@ -19,7 +19,7 @@ function App() {
       .catch((e) => console.error('Error fetching country data', e));
   }, []);
 
-  const formatCurrency = (value, country, currency) => {
+  const formatCurrency = (value, userCountry, randomCountry) => {
     const nf = new Intl.NumberFormat('en-US', {
       style: 'currency',
       currency: 'USD',

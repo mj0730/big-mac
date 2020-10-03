@@ -206,12 +206,6 @@
     "Numeric Code": 986
   },
   {
-    "ENTITY": "BRITISH INDIAN OCEAN TERRITORY (THE)",
-    "Currency": "US Dollar",
-    "Alphabetic Code": "USD",
-    "Numeric Code": 840
-  },
-  {
     "ENTITY": "BRUNEI DARUSSALAM",
     "Currency": "Brunei Dollar",
     "Alphabetic Code": "BND",
@@ -314,12 +308,6 @@
     "Numeric Code": 170
   },
   {
-    "ENTITY": "COLOMBIA",
-    "Currency": "Unidad de Valor Real",
-    "Alphabetic Code": "COU",
-    "Numeric Code": 970
-  },
-  {
     "ENTITY": "COMOROS (THE)",
     "Currency": "Comorian Franc",
     "Alphabetic Code": "KMF",
@@ -386,7 +374,7 @@
     "Numeric Code": 978
   },
   {
-    "ENTITY": "CZECHIA",
+    "ENTITY": "Czech Republic",
     "Currency": "Czech Koruna",
     "Alphabetic Code": "CZK",
     "Numeric Code": 203
@@ -773,7 +761,7 @@
     "Numeric Code": 408
   },
   {
-    "ENTITY": "KOREA (THE REPUBLIC OF)",
+    "ENTITY": "SOUTH KOREA",
     "Currency": "Won",
     "Alphabetic Code": "KRW",
     "Numeric Code": 410
@@ -944,12 +932,6 @@
     "Numeric Code": 484
   },
   {
-    "ENTITY": "MEXICO",
-    "Currency": "Mexican Unidad de Inversion (UDI)",
-    "Alphabetic Code": "MXV",
-    "Numeric Code": 979
-  },
-  {
     "ENTITY": "MICRONESIA (FEDERATED STATES OF)",
     "Currency": "US Dollar",
     "Alphabetic Code": "USD",
@@ -1028,7 +1010,7 @@
     "Numeric Code": 524
   },
   {
-    "ENTITY": "NETHERLANDS (THE)",
+    "ENTITY": "NETHERLANDS",
     "Currency": "Euro",
     "Alphabetic Code": "EUR",
     "Numeric Code": 978
@@ -1144,7 +1126,7 @@
     "Numeric Code": 604
   },
   {
-    "ENTITY": "PHILIPPINES (THE)",
+    "ENTITY": "PHILIPPINES",
     "Currency": "Philippine Peso",
     "Alphabetic Code": "PHP",
     "Numeric Code": 608
@@ -1192,7 +1174,7 @@
     "Numeric Code": 946
   },
   {
-    "ENTITY": "RUSSIAN FEDERATION (THE)",
+    "ENTITY": "RUSSIA",
     "Currency": "Russian Ruble",
     "Alphabetic Code": "RUB",
     "Numeric Code": 643
@@ -1398,25 +1380,13 @@
     "Numeric Code": 756
   },
   {
-    "ENTITY": "SWITZERLAND",
-    "Currency": "WIR Euro",
-    "Alphabetic Code": "CHE",
-    "Numeric Code": 947
-  },
-  {
-    "ENTITY": "SWITZERLAND",
-    "Currency": "WIR Franc",
-    "Alphabetic Code": "CHW",
-    "Numeric Code": 948
-  },
-  {
     "ENTITY": "SYRIAN ARAB REPUBLIC",
     "Currency": "Syrian Pound",
     "Alphabetic Code": "SYP",
     "Numeric Code": 760
   },
   {
-    "ENTITY": "TAIWAN (PROVINCE OF CHINA)",
+    "ENTITY": "TAIWAN",
     "Currency": "New Taiwan Dollar",
     "Alphabetic Code": "TWD",
     "Numeric Code": 901
@@ -1519,7 +1489,7 @@
     "Numeric Code": 784
   },
   {
-    "ENTITY": "UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND (THE)",
+    "ENTITY": "BRITAIN",
     "Currency": "Pound Sterling",
     "Alphabetic Code": "GBP",
     "Numeric Code": 826
@@ -1537,19 +1507,6 @@
     "Numeric Code": 858
   },
   {
-    "ENTITY": "URUGUAY",
-    "Currency": "Uruguay Peso en Unidades Indexadas (UI)",
-    "Alphabetic Code": "UYI",
-    "Numeric Code": 940
-  },
-  {
-    "ENTITY": "URUGUAY",
-    "Currency": "Unidad Previsional",
-    "Alphabetic Code": "UYW",
-    "Numeric Code": 927,
-    "Minor unit": 4
-  },
-  {
     "ENTITY": "UZBEKISTAN",
     "Currency": "Uzbekistan Sum",
     "Alphabetic Code": "UZS",
@@ -1562,13 +1519,13 @@
     "Numeric Code": 548
   },
   {
-    "ENTITY": "VENEZUELA (BOLIVARIAN REPUBLIC OF)",
+    "ENTITY": "VENEZUELA",
     "Currency": "Bolívar Soberano",
     "Alphabetic Code": "VES",
     "Numeric Code": 928
   },
   {
-    "ENTITY": "VIET NAM",
+    "ENTITY": "VIETNAM",
     "Currency": "Dong",
     "Alphabetic Code": "VND",
     "Numeric Code": 704

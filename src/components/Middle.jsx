@@ -18,7 +18,7 @@ const Middle = ({ amount, data }) => {
         in your country.
       </p>
       <Macs num={numOfMacs} />
-      <p>Your Dollar Purchasing Parity is {ppp}</p>
+      <p>Your Dollar Purchasing Parity is {ppp}.</p>
     </section>
   );
 };
