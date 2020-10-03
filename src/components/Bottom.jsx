@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Macs from './Macs';
 
 const Bottom = ({ amount, formatCurrency, data }) => {
   const randomCountry = data.random.Country;
@@ -10,7 +11,7 @@ const Bottom = ({ amount, formatCurrency, data }) => {
 
   return (
     <section id='bottom'>
-      <h3>Random Country {`- ${randomCountry}`}</h3>
+      <h2>Random Country {`- ${randomCountry}`}</h2>
       <p>
         {numOfMacs > 1
           ? `You can buy about ${numOfMacs} Big Mac's `
@@ -19,6 +20,8 @@ const Bottom = ({ amount, formatCurrency, data }) => {
           : `You can't buy any Big Macs `}
         in {randomCountry} with {userCountryAmount}.
       </p>
+
+      <Macs num={numOfMacs} />
 
       <p>
         Your {userCountryAmount} is worth about {otherCountryAmount} in {randomCountry}.

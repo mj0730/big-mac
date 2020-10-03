@@ -1,20 +1,35 @@
 :root {
   --text-primary: #ffffff;
   --border-primary: #ffffff;
+  --mcd-red: #cf240a;
+  --mcd-yellow: #fff10a;
 }
 
 body {
   background-color: #303030;
   color: var(--text-primary);
+  margin: 2em;
+}
+
+h1 {
+  color: var(--mcd-red);
+}
+
+h2 {
+  color: var(--mcd-yellow);
+}
+
+input {
+  display: block;
+  margin: 1em;
 }
 
 a {
   text-decoration: none;
-  color: firebrick;
+  color: var(--mcd-red);
 }
 
 footer {
-  width: 100%;
   margin-top: 5rem;
   padding: 1rem;
   border-top: 2px solid var(--border-primary);
@@ -31,4 +46,22 @@ footer img {
 
 footer a {
   display: flex;
+}
+
+.big-macs {
+  width: 400px;
+  margin-bottom: 0;
+}
+
+.big-macs img {
+  width: 16px;
+}
+
+.extra {
+  margin-top: 0;
+  font-size: 0.75rem;
+}
+
+.country {
+  color: var(--mcd-yellow);
 }

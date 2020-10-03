@@ -32,7 +32,11 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>Big Mac Index</h1>
+      <h1>
+        Big{' '}
+        <img src='https://fontmeme.com/permalink/201003/3dabcfd2fc226babdbbf7ce1a965b43c.png' alt='mcdonalds-font' />
+        ac Index
+      </h1>
       <Top amount={amount} setAmount={setAmount} userCountry={userCountry} />
       {!data ? <p>Loading...</p> : <Middle amount={amount} formatCurrency={formatCurrency} data={data} />}
       {!data ? <p></p> : <Bottom amount={amount} formatCurrency={formatCurrency} data={data} />}
