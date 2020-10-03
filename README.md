@@ -3,10 +3,10 @@
 To start this app, run
 `npm start`
 
-Runs the app in the development mode.<br />
+This builds the production react components and starts the server.<br />
 Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
 
-Note: The server started with `npm start` only serves the production build. If modifying front end files, run `npm build` to view them with the server. `npm dev` will run the development server for the client side app only.
+Note: The server started with `npm start` only serves the production build. If the server is running and modifying front end files, run `npm build` to view them with the server. `npm dev` will run the development server for the client side app only.
 
 ## Testing
 
