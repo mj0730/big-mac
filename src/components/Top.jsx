@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Top = ({ amount, userCountry, setAmount }) => {
+const Top = ({ amount, userCountry, setAmount, currency }) => {
   const handleInput = (e) => {
     const val = e.target.value
       .toString()
@@ -16,7 +16,7 @@ const Top = ({ amount, userCountry, setAmount }) => {
   return (
     <section id='top'>
       <p>Your country: {userCountry}</p>
-      <label htmlFor='amount'>Please enter an amount of money in your local currency</label>
+      <label htmlFor='amount'>Please enter an amount of money in {currency}</label>
       <input
         id='amount'
         type='number'
@@ -36,4 +36,5 @@ Top.propTypes = {
   amount: PropTypes.string.isRequired,
   userCountry: PropTypes.string.isRequired,
   setAmount: PropTypes.func.isRequired,
+  data: PropTypes.object.isRequired,
 };

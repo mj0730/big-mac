@@ -6,8 +6,10 @@ const Bottom = ({ amount, formatCurrency, data }) => {
   const randomCountry = data.random.Country;
   const exchangeRate = data.user['Dollar price'] / data.random['Dollar price'];
   const numOfMacs = Math.round((amount / data.user['Local price']) * exchangeRate);
-  const userCountryAmount = formatCurrency(amount);
-  const otherCountryAmount = formatCurrency(amount * exchangeRate);
+  const userCurrency = data.currency.user['Alphabetic Code'];
+  const randomCurrency = data.currency.random['Alphabetic Code'];
+  const userCountryAmount = formatCurrency(amount, userCurrency);
+  const otherCountryAmount = formatCurrency(amount * exchangeRate, randomCurrency);
 
   return (
     <section id='bottom'>
