@@ -1,30 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { shallow, mount } from 'enzyme';
 import Top from './Top';
 
 describe('Component rendering', () => {
   it('renders component without crashing', () => {
-    shallow(<Top />);
+    shallow(<Top amount={'0'} userCountry='US' setAmount={() => {}} data={{}} />);
   });
 
   it('is passed the country prop', () => {
-    const wrapper = shallow(<Top userCountry='US' />);
-    expect(wrapper.props().includedProp).toEqual('US');
+    const wrapper = shallow(<Top amount={'0'} userCountry='US' setAmount={() => {}} data={{}} />);
+    expect(wrapper.find('p').html()).toEqual('<p>Your country: US</p>');
   });
 
   it('should have a number input field', () => {
-    const wrapper = shallow(<Top />);
-    expect(wrapper.find('input[type="number"]').length).toEqual(1);
-  });
-
-  it('should set the amount value on change event', () => {
-    const wrapper = mount(<Top amount={0} />);
-    wrapper.find('input[type="number"]').simulate('change', {
-      target: {
-        value: 100,
-      },
-    });
-    expect(wrapper.find('input[type="number"]').prop('value')).toEqual(100);
+    const wrapper = shallow(<Top amount={'0'} userCountry='US' setAmount={() => {}} data={{}} />);
+    expect(wrapper.find('input[type="number"]')).toHaveLength(1);
   });
   /* other tests */
 });

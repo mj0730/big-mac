@@ -9,10 +9,11 @@ describe('Component rendering', () => {
   it('renders App without crashing', () => {
     shallow(<App />);
   });
-  it('App contains the required sections', () => {
+
+  it('App does not mount child components without data ', () => {
     const wrapper = mount(<App />);
 
-    expect(wrapper.containsAllMatchingElements([<Top />, <Middle />, <Bottom />])).toEqual(true);
+    expect(wrapper.containsAllMatchingElements([<Top />, <Middle />, <Bottom />])).toEqual(false);
   });
   /* other tests */
 });
