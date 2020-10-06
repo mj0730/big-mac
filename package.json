@@ -18,7 +18,7 @@
     "start": "react-scripts build && node src/server/index.js",
     "dev": "react-scripts start",
     "test": "react-scripts test",
-    "coverage": "test -- --coverage --watchAll=false",
+    "coverage": "test -- --coverage",
     "build": "react-scripts build"
   },
   "eslintConfig": {

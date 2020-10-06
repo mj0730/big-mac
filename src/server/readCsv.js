@@ -33,4 +33,3 @@ function createJsonFiles(array) {
 }
 
 createJsonFiles(FILES);
-module.exports = {};

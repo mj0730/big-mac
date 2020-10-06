@@ -11,7 +11,8 @@ const port = 3001;
 
 app.use(express.static('build'));
 
-const recentYear = filterJson('2016-01-01');
+const data = require('./json/big-mac-index.json') || [];
+const recentYear = filterJson(data, '2016-01-01');
 
 app.get('/', (req, res) => {
   res.sendStatus(200);

@@ -1,6 +1,9 @@
 ## Getting Started
 
-To start this app, run
+First, install the dependencies.
+`npm i`
+
+To start the app, run
 `npm start`
 
 This builds the production react components and starts the server.<br />
@@ -11,14 +14,13 @@ Note: The server started with `npm start` only serves the production build. If t
 ## Testing
 
 To run tests and monitor changed files, run `npm test`.
-To run tests once and view coverage, run `npm coverage`.
+To run tests and view coverage, run `npm coverage`.
 
 ## Project Requirements
 
 Top 1/3 of page
 You are in [COUNTRY]
-Please enter an amount of money in your local
-currency - [Input Field]
+Please enter an amount of money in your local currency - [Input Field]
 
 ---
 
@@ -28,16 +30,12 @@ Your Dollar Purchasing Parity (PPP) is [#]
 
 ---
 
-Bottom 1/3 of page - Results compared to random
-country
+Bottom 1/3 of page - Results compared to random country
 Random Country: [RANDOM COUNTRY]
-You could buy [#] of Big Macs in [RAND COUNTRY]
-with [INPUT]!
-(calculation is (INPUT / local price) _ (local dollar
-price / RAND COUNTRY dollar price)
+You could buy [#] of Big Macs in [RAND COUNTRY] with [INPUT]!
+(calculation is (INPUT / local price) _ (local dollar price / RAND COUNTRY dollar price)
 Your [INPUT] is worth about [#] in [RAND COUNTRY]
-(Calculation is [INPUT] _ (local dollar price / RAND
-COUNTRY dollar price))
+(Calculation is [INPUT] _ (local dollar price / RAND COUNTRY dollar price))
 
 ## Description
 
