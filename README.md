@@ -32,8 +32,10 @@ Your Dollar Purchasing Parity (PPP) is [#]
 
 Bottom 1/3 of page - Results compared to random country
 Random Country: [RANDOM COUNTRY]
+
 You could buy [#] of Big Macs in [RAND COUNTRY] with [INPUT]!
 (calculation is (INPUT / local price) _ (local dollar price / RAND COUNTRY dollar price)
+
 Your [INPUT] is worth about [#] in [RAND COUNTRY]
 (Calculation is [INPUT] _ (local dollar price / RAND COUNTRY dollar price))
 
