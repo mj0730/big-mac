@@ -21,7 +21,7 @@ const Macs = ({ num }) => {
     <div>
       <div className='big-macs'>
         {macArray.map((x, i) => (
-          <img key={i} src='./bigmac.svg' alt='&#127828' />
+          <img key={i} src='./bigmac.svg' alt='' />
         ))}
       </div>
       <p className='extra'>{extra > 0 ? `+ ${extra} more` : null}</p>
